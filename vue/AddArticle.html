@@ -13,19 +13,19 @@
 </style>
 <body>
 	<div class="container">
-		<form action="/TP3SI/AddArticleController" method="post">
+		<form id="form" action="http://127.0.0.1:5000/insertdb" method="post">
 			<div class="row">
 				<div class="col">
 					<strong>Author</strong> <input type="text" class="form-control"
-						placeholder="Enter author">
+						placeholder="Enter author" name="atheur">
 				</div>
 				<div class="col">
-					<strong>Date</strong> <input type="date" class="form-control">
+					<strong>Date</strong> <input type="date" class="form-control" name="date">
 				</div>
 			</div>
 			<div class="row">
 				<div class="col">
-					<strong>Title</strong> <input type="text" class="form-control">
+					<strong>Title</strong> <input type="text" class="form-control" name="titre">
 				</div>
 			</div>
 			<div class="row">
