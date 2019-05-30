@@ -36,31 +36,18 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<th scope="row">Mark</th>
-						<td>Politics</td>
-						<td>Published</td>
-						<td>21/11/2018</td>
-						<td>Title 1</td>
-
-					</tr>
-					<tr>
-						<th scope="row">Jacob</th>
-						<td>Cinema</td>
-						<td>Published</td>
-						<td>22/04/2019</td>
-						<td>Title 2</td>
-					</tr>
-					<tr>
-						<th scope="row">Larry</th>
-						<td>Sport</td>
-						<td>Published</td>
-						<td>04/03/2018</td>
-						<td>Title 3</td>
-					</tr>
-				</tbody>
+				    {% for item in items %}
+				       <tr>
+				           <th scope="row" class="c2">{{item.author}}</th>
+				           <td class="c3">{{item.title}}</td>
+				           <td class="c4">{{item.date}}</td>
+				           <td class="c5">{{item.section}}</td>
+				           <td class="c6">{{item.status}}</td>
+				           <td class="c7">{{item.text}}</td>
+				       </tr>
+				    {% endfor %}
+				 </tbody>
 			</table>
-
 		</div>
 	</div>
 </body>

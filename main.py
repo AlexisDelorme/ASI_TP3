@@ -6,7 +6,7 @@ from flask import request
 app = Flask(__name__)
 
 
-@app.route('/form')
+@app.route('/AddArticle')
 def article_form():
     return render_template('AddArticle.html')
 
@@ -19,12 +19,12 @@ def display_articles():
 
 @app.route('/insertdb', methods=['POST'])
 def display_form():
-    x = article.Article(article.Article.getlastid()+1, request.form['Author'], request.form['Title'],
-                        request.form['Date'], request.form['Section'],
-                        request.form['Status'], request.form['Text'])
-    y = article.Article.print(x)
-    z = [y]
-    article.Article.insertdb(z)
+    a = article.Article(article.Article.getlastid()+1, request.form['autheur'], request.form['titre'],
+                        request.form['section'], request.form['date'],
+                        request.form['statu'], request.form['texte'])
+    b = article.Article.print(a)
+    c = [b]
+    article.Article.insertdb(c)
     return redirect(url_for('display_articles'))
 
 

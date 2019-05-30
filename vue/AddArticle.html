@@ -17,7 +17,7 @@
 			<div class="row">
 				<div class="col">
 					<strong>Author</strong> <input type="text" class="form-control"
-						placeholder="Enter author" name="atheur">
+						placeholder="Enter author" name="autheur">
 				</div>
 				<div class="col">
 					<strong>Date</strong> <input type="date" class="form-control" name="date">
@@ -30,50 +30,30 @@
 			</div>
 			<div class="row">
 				<div class="col">
-					<strong>Section</strong> <select class="custom-select"
-						id="inputGroupSelect01">
+					<strong>Section</strong> <select class="custom-select" name="section" id="inputGroupSelect01">
 						<option selected>Choose...</option>
-						<option value="1">Politics</option>
-						<option value="2">Cinema</option>
-						<option value="3">Sport</option>
+						<option value="Politique">Politics</option>
+						<option value="Cinema">Cinema</option>
+						<option value="Sport">Sport</option>
 					</select>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col">
-					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio"
-							name="inlineRadioOptions" value="option1"> <label
-							class="form-check-label" for="inlineRadio1">In edition</label>
-					</div>
-				</div>
-				<div class="col">
-					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio"
-							name="inlineRadioOptions" value="option2"> <label
-							class="form-check-label" for="inlineRadio2">Submited</label>
-					</div>
-				</div>
-				<div class="col">
-					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio"
-							name="inlineRadioOptions" value="option3"> <label
-							class="form-check-label" for="inlineRadio2">Accepted</label>
-						<div class="form-check form-check-inline"></div>
-					</div>
-				</div>
-				<div class="col">
-					<input class="form-check-input" type="radio"
-						name="inlineRadioOptions" value="option2"> <label
-						class="form-check-label" for="inlineRadio2">Published</label>
-				</div>
+                    <input name="statu" id="statu0" required="required" aria-required="true" value="Edit" type="radio">
+                    <label for="statu0">In edition</label>
+                    <input name="statu" id="statu1" value="Submitted" type="radio">
+                    <label for="statu1">Submitted</label>
+                    <input name="statu" id="statu2" value="Accepted" type="radio">
+                    <label for="statu2">Accepted</label>
+                    <input name="statu" id="status3" value="Published" type="radio">
+                    <label for="statu3">Published</label>
 			</div>
 			<div class="row">
 			<strong>Text</strong>
-			<textarea class="form-control"></textarea>
+			<textarea class="form-control" name="texte"></textarea>
 			</div>
 			<br>
-			<button type="submit" class="btn btn-success">Envoyer</button>
+			<button type="submit" class="btn btn-success" value="Save">Envoyer</button>
 		</form>
 	</div>
 </body>
